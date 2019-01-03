@@ -5,7 +5,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <title>Open Source Aquatics Aquarium Controller</title>
-  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.21/angular.min.js"></script>
+  <!--<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.21/angular.min.js"></script>-->
+  <script src="js/angular.min.js"></script>
   <script type="text/javascript" src="js/angular-route.js"></script>
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/styles.css">
@@ -14,8 +15,9 @@
 <body>
 	<div id="off-canvas" off-canvas></div>
 	<div class="container h100">
-		<header ng-controller="headerController">
-			<button type="button" class="navbar-toggle" ng-click="toggleMenu()">
+    <header ng-controller="headerController">
+      <div class="date"></div>
+      <button type="button" class="navbar-toggle" ng-click="toggleMenu()">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
